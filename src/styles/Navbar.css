@@ -1,0 +1,198 @@
+.home-dark-bg {
+  background-color: #181818;
+}
+.home-light-bg {
+  background-color: #f9f9f9;
+}
+
+.sidebar-dark-bg {
+  background-color: #212121;
+  color: white;
+}
+.sidebar-light-bg {
+  background-color: #ffffff;
+  color: black;
+}
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+  width: 100%;
+  padding-right: 0px;
+  height: 50px;
+  display: flex;
+  padding-bottom: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  align-items: center;
+}
+.sm-navbar {
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 10;
+}
+.close {
+  background-color: white;
+  font-size: 26px;
+  outline: none;
+  border-width: 1px;
+  cursor: pointer;
+  border-style: solid;
+  margin-left: -75px;
+
+  color: black;
+  padding-top: 6px;
+  padding-left: 0px;
+}
+.logout {
+  background-color: white;
+  width: 80px;
+  height: 25px;
+  pad: 10px;
+  outline: none;
+  border-width: 1px;
+  cursor: pointer;
+  border-style: solid;
+  border-color: #3b82f6;
+  color: #3b82f6;
+  margin-right: 15px;
+}
+.darkClose {
+  background-color: #212121;
+  font-size: 26px;
+  margin-left: -75px;
+  outline: none;
+  border-width: 1px;
+  cursor: pointer;
+  border-style: solid;
+  border-color: white;
+  color: white;
+  padding-top: 6px;
+  padding-left: 0px;
+}
+.darkLogout {
+  background-color: #212121;
+  width: 80px;
+  height: 25px;
+  pad: 10px;
+  outline: none;
+  border-width: 1px;
+  cursor: pointer;
+  border-style: solid;
+  border-color: white;
+  color: white;
+  margin-right: 15px;
+}
+
+.sm-logout {
+  margin-right: 1px;
+
+  outline: none;
+  cursor: pointer;
+  border-width: 0px;
+}
+.ada {
+  margin-right: 1px;
+
+  outline: none;
+  cursor: pointer;
+  border-width: 0px;
+  padding-left: -250px;
+}
+.button-dark-bg {
+  background-color: #212121;
+}
+.button-light-bg {
+  background-color: white;
+}
+.menuButtonStyle {
+  background-color: transparent;
+
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menuStyle {
+  position: absolute;
+  top: 42px;
+  left: -60vw;
+  width: 50vw;
+  height: 100vh;
+  padding: 10px;
+
+  transition: transform 0.3s ease-in-out;
+}
+
+.menuStyle.open {
+  transform: translateX(60vw);
+}
+
+.listStyle {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.linkStyle {
+  display: block;
+  font-size: 24px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+.linkStyle-dark-Font {
+  color: white;
+}
+.linkStyle-light-Font {
+  color: black;
+}
+
+@media screen and (max-width: 576px) {
+  .navbar {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 577px) {
+  .sm-navbar {
+    display: none;
+  }
+}
+.adminSmNav {
+  display: block;
+  background-color: #f8f9fd;
+  width: 60%;
+  height: 100vh;
+  padding: 0;
+  position: fixed;
+  left: 0;
+
+  top: 58.17px; /* Aligns below the navbar */
+  transform: translateX(-100%); /* Initially hidden off-screen */
+  transition: transform 0.3s ease; /* Transition for smooth slide-in */
+  z-index: 20; /* Ensure sidebar sits above overlay */
+}
+
+.adminSmNav.show {
+  transform: translateX(0); /* Slide in to the viewport */
+}
+
+.overlay {
+  position: fixed;
+  top: 58.17px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}

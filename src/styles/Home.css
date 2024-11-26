@@ -1,0 +1,470 @@
+.home-item-arrangement {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.lg-sidebar {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  min-width: 200px;
+  width: 10%;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+.sample {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+}
+.nxtWatch-logo {
+  height: 40px;
+  width: 150px;
+}
+.link-light-color {
+  color: black;
+  text-decoration: none;
+}
+.link-light-color.active {
+  color: #f44366;
+}
+.link-dark-color {
+  color: #cccccc;
+  text-decoration: none;
+}
+.link-dark-color.active {
+  color: #f44366;
+}
+.home {
+  font-size: 20px;
+  margin-bottom: 5px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 5px;
+}
+.icon {
+  margin-right: 10px;
+}
+.contact {
+  padding-left: 10px;
+  font-weight: 500;
+  margin-top: auto;
+  margin-bottom: 30px;
+}
+.facebook {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.home-nav-section {
+  width: 90%;
+
+  display: flex;
+  flex-direction: column;
+}
+.profile-img {
+  height: 30px;
+  width: 30px;
+  margin-right: 20px;
+}
+.moon {
+  font-size: 30px;
+  margin-right: 20px;
+}
+.sun {
+  font-size: 30px;
+  margin-right: 20px;
+  color: white;
+}
+.sunny {
+  font-size: 30px;
+  margin-right: 18px;
+  color: white;
+}
+.moony {
+  font-size: 30px;
+  margin-right: 18px;
+}
+
+.sm-moon-light-theme {
+  font-size: 25px;
+  margin-right: 18px;
+}
+
+.get {
+  background-color: white;
+  width: 100px;
+  height: 25px;
+  pad: 10px;
+  outline: none;
+  border-width: 1px;
+  cursor: pointer;
+  border-style: solid;
+  border-color: #3b82f6;
+  color: #3b82f6;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-image: url("https://assets.ccbp.in/frontend/react-js/nxt-watch-banner-bg.png");
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+.x {
+  display: flex;
+  align-items: flex-start;
+}
+.btnn {
+  outline: none;
+  background-color: transparent;
+  border-width: 0px;
+  margin-left: auto;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.button-dark-bg {
+  background-color: #212121;
+}
+.button-light-bg {
+  background-color: white;
+}
+.input-css {
+  width: 50%;
+  min-width: 300px;
+  margin-left: 10px;
+  height: 30px;
+}
+.main-part {
+  height: auto;
+  min-height: 100vh;
+  width: 100%;
+  padding-right: 0px;
+  margin-right: 0px;
+}
+.main-part-light-bg {
+  background-color: #f8fafc;
+}
+.main-dark-light-bg {
+  background-color: #181818;
+}
+.search-btn {
+  border-width: 0px;
+  outline: none;
+  background-color: #f8fafc;
+  height: 30px;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+}
+.ul-divs {
+  width: 92%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+
+  flex-wrap: wrap;
+  padding-right: 0px;
+  margin-right: 0px;
+}
+.list-container {
+  width: 30%;
+  height: auto;
+  margin-bottom: 20px;
+  cursor: pointer;
+
+  margin-right: 15px;
+}
+.thumbnail {
+  height: 200px;
+  width: 100%;
+}
+.profile {
+  height: 50px;
+  width: 50px;
+  padding-left: 10px;
+  margin-right: 10px;
+}
+.video-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.video-flex-para {
+  display: flex;
+  color: black;
+  flex-direction: column;
+  padding-right: 1px;
+}
+.title {
+  font-size: 14px;
+}
+.name {
+  margin-top: -5px;
+  margin-right: 5px;
+}
+.li-st {
+  list-style-type: circle !important;
+}
+.show-none {
+  display: none;
+}
+
+.nxtWatch-sm-logo {
+  height: 30px;
+  width: 120px;
+}
+.products-details-loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.random-search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.no-search-img {
+  height: 300px;
+  width: 60%;
+}
+
+.ib-hubs-light {
+  color: #475569;
+}
+.ib-hubs-dark {
+  color: #616e7c;
+}
+.dark-title {
+  color: white;
+}
+.dark-input {
+  background-color: black;
+  color: white;
+  outline-width: 0px;
+  border-width: 0px;
+}
+.dark-search-button {
+  background-color: black;
+  color: white;
+}
+.link-decoration {
+  text-decoration: none;
+}
+.sm-display {
+  display: none;
+}
+.lg-display {
+  display: block;
+}
+.no-search-light {
+  color: #181818;
+}
+.no-search-dark {
+  color: white;
+}
+.retry-light {
+  color: #181818;
+  background-color: white;
+  border-width: 1px;
+  cursor: pointer;
+}
+.retry-dark {
+  color: white;
+  background-color: #181818;
+  border-width: 1px;
+  border-color: white;
+  cursor: pointer;
+}
+
+/* EXTRA SMALL DEVICES */
+
+@media screen and (max-width: 576px) {
+  .item-arrangement {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+  .lg-display {
+    display: none;
+  }
+  .sm-display {
+    display: block;
+  }
+
+  .ul-divs {
+    width: 88%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-right: 0px;
+    margin-right: 0px;
+  }
+  .list-container {
+    width: 95%;
+    height: auto;
+    margin-bottom: 20px;
+
+    cursor: pointer;
+    margin-right: 0px;
+  }
+  .thumbnail {
+    height: 180px;
+    width: 100vw;
+    margin-left: -40px;
+  }
+  .input-css {
+    width: 80%;
+    min-width: 0px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+
+    height: 30px;
+  }
+  .home-nav-section {
+    width: 100%;
+    min-width: 0px;
+  }
+  .main-part {
+    background-color: #f8fafc;
+    height: auto;
+    width: 100%;
+    padding: 0px;
+  }
+  .profile {
+    padding-left: 0px;
+    margin-left: -20px;
+    margin-right: 10px;
+  }
+  .title {
+    font-size: 14px;
+  }
+  .sm-moon-light-theme {
+    font-size: 18px;
+    margin-right: 12px;
+  }
+  .sunny {
+    font-size: 18px;
+    margin-right: 12px;
+    color: white;
+  }
+  .moonny {
+    font-size: 18px;
+    margin-right: 12px;
+  }
+  .nxtWatch-sm-logo {
+    height: 22px;
+    width: 120px;
+  }
+  .random-search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    margin: auto;
+  }
+  .no-search-img {
+    height: 300px;
+    width: 60%;
+  }
+  .main-part-light-bg {
+    background-color: #f8fafc;
+  }
+  .main-dark-light-bg {
+    background-color: #181818;
+  }
+}
+
+/*  SMALL DEVICES */
+
+/*  MEDIUM DEVICES */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .main-part {
+    height: auto;
+    width: 100%;
+    padding: 0px;
+  }
+  .home {
+    font-size: 15px;
+  }
+  .lg-display {
+    display: block;
+  }
+  .sm-display {
+    display: none;
+  }
+  .home-item-arrangement {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .input-css {
+    width: 80%;
+    min-width: 200px;
+    margin-left: 10px;
+    height: 30px;
+  }
+
+  .ul-divs {
+    width: 89%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+  }
+  .list-container {
+    width: 40%;
+    height: auto;
+    min-width: 45%;
+    margin-bottom: 20px;
+    cursor: pointer;
+    margin-left: -10px;
+    margin-right: 20px;
+  }
+  .thumbnail {
+    height: 200px;
+    width: 100%;
+  }
+  .title {
+    font-size: 12px;
+  }
+}
+
+/* EXTRA SMALL AND SMALL DEVICES */
+@media screen and (max-width: 576px) {
+  .home-item-arrangement {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+  .lg-sidebar {
+    display: none;
+    padding: 0px;
+  }
+  .navbar {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 577px) {
+  .sm-navbar {
+    display: none;
+  }
+}

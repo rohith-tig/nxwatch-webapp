@@ -1,0 +1,379 @@
+.trending-item-arrangement {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.trending-nav-section {
+  width: 90%;
+
+  display: flex;
+  flex-direction: column;
+}
+.trending-light-css {
+  display: flex;
+  flex-direction: row;
+  height: 130px;
+  align-items: center;
+  width: 100%;
+}
+.trending-light {
+  background-color: #f1f1f1;
+}
+
+.trending-dark-css {
+  background-color: #181818;
+  color: white;
+}
+.tds {
+  border-width: 0px;
+  color: #181818;
+  background-color: #f8fafc;
+  cursor: pointer;
+}
+.tdsl {
+  background-color: #181818;
+  color: #f8fafc;
+  border-width: 0px;
+  cursor: pointer;
+}
+
+.fire-light-css {
+  font-size: 30px;
+  background-color: #e1e9f0;
+  height: auto;
+  width: auto;
+  padding: 18px;
+  border-radius: 40px;
+  margin-left: 30px;
+  margin-right: 30px;
+  color: red;
+}
+.products-details-loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.no-saved {
+  width: 50%;
+}
+
+.fire-dark-bg {
+  background-color: #0f0f0f;
+}
+
+.main-part-light-bg {
+  background-color: #f8fafc;
+}
+
+.main-dark-light-bg {
+  background-color: #0f0f0f;
+}
+.trending-main-part {
+  width: 100%;
+  padding: 10 px;
+
+  height: auto;
+}
+.trending-ul-divs {
+  width: 90%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.trending-list-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  margin-bottom: 20px;
+
+  cursor: pointer;
+}
+.trending-thumbnail {
+  width: 50%;
+  height: 250px;
+}
+.trending-video-details {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  align-items: center;
+  color: black;
+}
+.trending-profile {
+  height: 50px;
+  width: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.md-display {
+  display: none;
+}
+.large-display {
+  display: block;
+}
+
+@media screen and (max-width: 576px) {
+  .trending-item-arrangement {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .trending-nav-section {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+  }
+  .large-display {
+    display: block;
+  }
+  .md-display {
+    display: none;
+  }
+  .trending-main-part {
+    width: 100%;
+    padding: 0 px;
+    min-height: 100vh;
+    height: auto;
+  }
+  .tmp {
+    min-height: 100vh;
+    height: auto;
+  }
+  .trending-ul-divs {
+    width: 88%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .trending-light-css {
+    padding-top: 3px;
+    padding-bottom: 6px;
+    height: 87px;
+  }
+
+  .trending-list-container {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .trending-thumbnail {
+    height: 180px;
+    width: 100vw;
+    margin-left: -40px;
+  }
+
+  .trending-video-details {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    margin-left: -40px;
+  }
+
+  .fire-light-css {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .trending-title {
+    font-size: 13px;
+  }
+  .large-display {
+    display: none;
+  }
+  .md-display {
+    display: block;
+  }
+  .trending-profile {
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+.tmp {
+  width: 100%;
+  box-sizing: border-box;
+}
+.tuld {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+.tlc {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 250px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.tim {
+  width: 40%;
+  min-width: 320px;
+}
+.tvd {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  align-items: center;
+  color: black;
+  box-sizing: border-box;
+  position: relative;
+}
+.tp {
+  height: 50px;
+  width: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.singa {
+  position: absolute;
+  right: 10px;
+}
+.zingi {
+  display: none;
+}
+.zambi {
+  display: block;
+}
+.chinagr {
+  display: flex;
+  flex-direction: row;
+}
+.binga {
+  display: none;
+}
+@media screen and (min-width: 577px) and (max-width: 805px) {
+  .tlc {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .tim {
+    min-width: none;
+    width: 90%;
+  }
+  .singa {
+    display: none;
+  }
+  .tvfp {
+    width: 300px;
+  }
+  .binga {
+    display: block;
+
+    position: absolute;
+    margin-top: -10px;
+    right: 50px;
+  }
+  .zambi {
+    width: 100%;
+  }
+  .tvd {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 805px) and (max-width: 900px) {
+  .zingi {
+    display: block;
+  }
+  .zambi {
+    display: none;
+  }
+  .chinagr {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .tlc {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .tim {
+    margin-left: 0px;
+    height: 250px;
+    min-width: none;
+    width: 100%;
+  }
+  .singa {
+    display: none;
+  }
+  .tvfp {
+    width: 300px;
+  }
+  .binga {
+    display: block;
+
+    position: absolute;
+    margin-top: -10px;
+    right: 10px;
+  }
+  .zambi {
+    width: 100%;
+  }
+  .tvd {
+    width: 100%;
+  }
+  .tp {
+    margin-left: 10px;
+    height: 40px;
+    width: 40px;
+  }
+  .tuld {
+    padding-inline-start: 0px;
+  }
+}
+.simbi {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.simbi1 {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 350px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.simbi2 {
+  margin-top: 20px;
+}
+.simbi2 button {
+  padding: 10px 15px;
+  margin: 0 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+.yes-button {
+  background-color: #4caf50; /* Green */
+  color: white;
+}
+
+.close-button {
+  background-color: #f44336; /* Red */
+  color: white;
+}
