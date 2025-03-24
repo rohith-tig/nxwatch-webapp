@@ -18,8 +18,8 @@ interface State {
 
 class Login extends Component<LoginProps, State> {
   state: State = {
-    name: "",
-    pass: "",
+    name: "rohith",
+    pass: "rohith@123",
     showSubmitError: false,
     errorMsg: "",
     isPasswordVisible: false,
@@ -28,14 +28,14 @@ class Login extends Component<LoginProps, State> {
   onChangeUsername = (event: React.ChangeEvent<HTMLInputElement>) => {
     this.setState({
       name: event.target.value,
-      showSubmitError:false
+      showSubmitError: false,
     });
   };
 
   onChangePassword = (event: React.ChangeEvent<HTMLInputElement>) => {
     this.setState({
       pass: event.target.value,
-      showSubmitError:false
+      showSubmitError: false,
     });
   };
 
@@ -98,27 +98,26 @@ class Login extends Component<LoginProps, State> {
   submitForm = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const { name, pass } = this.state;
-    if(name==="rohith" && pass==="rohith@123"){
+    if (name === "rohith" && pass === "rohith@123") {
+      const username = "rahul";
+      const password = "rahul@2021";
+      const userDetails = { username, password };
 
-    const username="rahul"
-    const password="rahul@2021"
-    const userDetails = { username, password };
-
-    const url = "https://apis.ccbp.in/login";
-    const options = {
-      method: "POST",
-      body: JSON.stringify(userDetails),
-    };
-    const response = await fetch(url, options);
-    const data = await response.json();
-    if (response.ok) {
-      this.settingCookies(data.jwt_token);
-      this.setState({name:'',pass:''})
+      const url = "https://apis.ccbp.in/login";
+      const options = {
+        method: "POST",
+        body: JSON.stringify(userDetails),
+      };
+      const response = await fetch(url, options);
+      const data = await response.json();
+      if (response.ok) {
+        this.settingCookies(data.jwt_token);
+        this.setState({ name: "", pass: "" });
+      } else {
+        this.onSubmitFailure(data.error_msg);
+      }
     } else {
-      this.onSubmitFailure(data.error_msg);
-    }
-    }else{
-      this.setState({showSubmitError:true,errorMsg:'Invalid Credentials'})
+      this.setState({ showSubmitError: true, errorMsg: "Invalid Credentials" });
     }
   };
 
@@ -157,7 +156,11 @@ class Login extends Component<LoginProps, State> {
           <button type="submit" className="login-button">
             Login
           </button>
-          {showSubmitError && <p className="error-message">{showSubmitError?`*${errorMsg}`:''}</p>}
+          {showSubmitError && (
+            <p className="error-message">
+              {showSubmitError ? `*${errorMsg}` : ""}
+            </p>
+          )}
         </form>
       </div>
     );
